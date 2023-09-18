@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "64eaf54e0fcce6f628354758"
+  },
+  "name": "Joe Biden",
+  "email": "joe@walla.com",
+  "password": "$2b$10$1XZsGtfp4Lyxu2CYDNALMuCqMbkqnNGR2cFhfBPbixYrnb2Z5m7a6",
+  "role": "user",
+  "createdAt": {
+    "$date": "2023-08-27T07:03:42.288Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-27T07:03:42.288Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64eaf6100fcce6f62835475a"
+  },
+  "name": "Donald Trump",
+  "email": "donald@walla.com",
+  "password": "$2b$10$DZE.NlXCUA9.1tIMno4Yze/Yq7QhnnT3jKFBWYDSrIcT6EDeVIdGW",
+  "role": "user",
+  "createdAt": {
+    "$date": "2023-08-27T07:06:56.874Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-27T07:06:56.874Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f84dad798037c1cd94b104"
+  },
+  "name": "Osher",
+  "email": "osher@gmail.com",
+  "password": "$2b$10$ZThSlvCqPgkz6r/wtZ6XMuVtQMJrVbZ52f39rnkHlJv3uxR95NnmW",
+  "role": "admin",
+  "createdAt": {
+    "$date": "2023-09-06T10:00:13.112Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-06T10:00:13.112Z"
+  },
+  "__v": 0
+}]
