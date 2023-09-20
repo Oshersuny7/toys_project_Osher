@@ -17,61 +17,10 @@
 },
 {
   "_id": {
-    "$oid": "64f052d78d072c8fc6bd1622"
-  },
-  "name": "RAZOR A2 KICK SCOOTER",
-  "info": "The Razor A2 Kick Scooter is a fantastic choice designed specifically for kids. It offers a range of features to ensure a fun and safe riding experience.",
-  "price": 279,
-  "category": "BABY TOYS",
-  "user_id": "64f050ad1747ef71ac93edc5",
-  "createdAt": {
-    "$date": "2023-08-31T08:44:07.092Z"
-  },
-  "updatedAt": {
-    "$date": "2023-08-31T08:44:07.092Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64f074998d072c8fc6bd1624"
-  },
-  "name": "VIGA SUNDAE",
-  "info": "Have fun with Wooden Stacking Ice Cream Sundae from Viga Stack, post, count, sort or line up the shapes. Help children to develop hand to eye co-ordination skills. Sort each piece on the ground before they stack them up to engage in a fun activity which promotes their geometry skills. Includes 1 stand and 4 detachable parts for stacking playA great addition to little kitchen. Pretend food is an excellent way to encourage imaginative play and communication.Non-toxic paint. ",
-  "price": 34,
-  "category": "FOOD",
-  "user_id": "64f050ad1747ef71ac93edc5",
-  "createdAt": {
-    "$date": "2023-08-31T11:08:09.455Z"
-  },
-  "updatedAt": {
-    "$date": "2023-08-31T11:08:09.455Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64f075148d072c8fc6bd1626"
-  },
-  "name": "HAPE WOODEN CUPCAKES",
-  "info": "HAPE WOODEN CUPCAKES-  WOODEN DOLLHOUSE ACCESSORIES Time for a sweet treat! Freely combine and make your own play cupcake creations with four cupcakes and a range of spectacular topping including a candle, fruits and a wafer. Hape's Cupcakes have colourful real-life design, multiple shapes and textures enhance the play experience. Little bakers can practice colours and counting and develop fine motor skills ",
-  "price": 99,
-  "category": "FOOD",
-  "user_id": "64f050ad1747ef71ac93edc5",
-  "createdAt": {
-    "$date": "2023-08-31T11:10:12.211Z"
-  },
-  "updatedAt": {
-    "$date": "2023-08-31T11:10:12.211Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
     "$oid": "64f841fbc9aeea4deef49967"
   },
-  "name": "WATER GUN (COLORS VARY)",
-  "info": "This Foam Water Shooter Pack To Provide Hours Of Fun Gameplay For A Group Of Kids Or Teens Water Toy Is Lightweight And Floats In The Pool, Lake Or Ocean ",
+  "name": "WATER GUN",
+  "info": "water guns for kids to play in the pool or bath",
   "price": 4,
   "category": "BATH TOYS",
   "user_id": "64eaf54e0fcce6f628354758",
@@ -79,9 +28,10 @@
     "$date": "2023-09-06T09:10:19.680Z"
   },
   "updatedAt": {
-    "$date": "2023-09-06T09:10:19.680Z"
+    "$date": "2023-09-18T14:09:05.593Z"
   },
-  "__v": 0
+  "__v": 0,
+  "img_url": "https://images.pexels.com/photos/5257324/pexels-photo-5257324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 },
 {
   "_id": {
@@ -104,16 +54,16 @@
   "_id": {
     "$oid": "64f842b9c9aeea4deef4996b"
   },
-  "name": "BALI BAZOO STROLLER TOY- MONKEY MARTHA",
-  "info": "The Bali Bazoo Stroller Toy - Monkey Martha is a charming and interactive toy designed to entertain babies and toddlers while on the go. This stroller toy features an adorable monkey named Martha, with playful details and sensory features to engage young children",
-  "price": 69,
+  "name": "PLAY-DOH EGG",
+  "info": "Playdough Eggs-Bright colors of Play-Doh modeling compound.They’re just right for little hands to crack open and start creating with their vast imagination",
+  "price": 122,
   "category": "BABY TOYS",
   "user_id": "64eaf54e0fcce6f628354758",
   "createdAt": {
     "$date": "2023-09-06T09:13:29.215Z"
   },
   "updatedAt": {
-    "$date": "2023-09-06T11:10:19.471Z"
+    "$date": "2023-09-18T09:52:36.197Z"
   },
   "__v": 0
 },
@@ -170,23 +120,6 @@
 },
 {
   "_id": {
-    "$oid": "64f8443ec9aeea4deef49973"
-  },
-  "name": "BALI BAZOO STROLLER TOY- MONKEY MARTHA",
-  "info": "The Bali Bazoo Stroller Toy - Monkey Martha is a charming and interactive toy designed to entertain babies and toddlers while on the go. This stroller toy features an adorable monkey named Martha, with playful details and sensory features to engage young children",
-  "price": 69,
-  "category": "BABY TOYS",
-  "user_id": "64eaf54e0fcce6f628354758",
-  "createdAt": {
-    "$date": "2023-09-06T09:19:58.271Z"
-  },
-  "updatedAt": {
-    "$date": "2023-09-06T09:19:58.271Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
     "$oid": "64f85a0941354cda3ffbe526"
   },
   "name": "JANOD - BATHTUB HOOP",
@@ -199,6 +132,78 @@
   },
   "updatedAt": {
     "$date": "2023-09-06T12:00:44.874Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65085cf99877a81df1c5b33a"
+  },
+  "name": "BALI BAZOO STROLLER TOY- MONKEY MARTHA",
+  "info": "The Bali Bazoo Stroller Toy - Monkey Martha is a charming and interactive toy designed to entertain babies and toddlers while on the go. This stroller toy features an adorable monkey named Martha, with playful details and sensory features to engage young children",
+  "img_url": "https://images.pexels.com/photos/138963/pexels-photo-138963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "price": 69,
+  "category": "BABY TOYS",
+  "user_id": "64eaf6100fcce6f62835475a",
+  "createdAt": {
+    "$date": "2023-09-18T14:21:45.483Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-18T14:21:45.483Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65085df89877a81df1c5b33c"
+  },
+  "name": "VIGA SUNDAE",
+  "info": "Have fun with Wooden Stacking Ice Cream Sundae from Viga Stack, post, count, sort or line up the shapes.Help children to develop hand to eye co-ordination skills. Sort each piece on the ground before they stack them up to engage inafunactivitywhichpromotes their geometry skills. Includes 1 stand and 4 detachable parts for stacking playA great addition to little kitchen. Pretend food is an excellent way to encourage imaginative play and communication.Non-toxic paint.",
+  "img_url": "https://images.pexels.com/photos/380954/pexels-photo-380954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "price": 45,
+  "category": "FOOD",
+  "user_id": "64eaf6100fcce6f62835475a",
+  "createdAt": {
+    "$date": "2023-09-18T14:26:00.560Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-18T14:26:00.560Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65085e769877a81df1c5b33e"
+  },
+  "name": "HAPE WOODEN CUPCAKES",
+  "info": "Time for a sweet treat! Freely combine and make your own play cupcake creations with four cupcakes and a range of spectacular topping including a candle, fruits and a wafer. Hape's Cupcakes have colourful real-life design, multiple shapes and textures enhance the play experience. Little bakers can practice colours and counting and develop fine motor skills.",
+  "img_url": "https://images.pexels.com/photos/5634824/pexels-photo-5634824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "price": 99,
+  "category": "FOOD",
+  "user_id": "64eaf6100fcce6f62835475a",
+  "createdAt": {
+    "$date": "2023-09-18T14:28:06.029Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-18T14:28:06.029Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65085ec99877a81df1c5b340"
+  },
+  "name": "RAZOR A2 KICK SCOOTER",
+  "info": "The Razor A2 Kick Scooter is a fantastic choice designed specifically for kids. It offers a range of features to ensure a fun and safe riding experience.",
+  "img_url": "https://images.pexels.com/photos/1642055/pexels-photo-1642055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "price": 249,
+  "category": "BABY TOYS",
+  "user_id": "64eaf6100fcce6f62835475a",
+  "createdAt": {
+    "$date": "2023-09-18T14:29:29.746Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-18T14:29:29.746Z"
   },
   "__v": 0
 }]

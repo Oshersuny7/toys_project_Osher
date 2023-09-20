@@ -19,10 +19,9 @@ router.get("/", async (req, res) => {
     // Make the search query case-insensitive
     if (searchText) {
       const searchExp = new RegExp(searchText, "i");
-      filterFind.$or = [
-        { name: { $regex: searchExp } },
-        { info: { $regex: searchExp } },
-      ];
+      filterFind = 
+        {$or:[{name:searchExp},{info:searchExp}]}
+      
     }
 
     // Make the category filter case-insensitive
@@ -73,9 +72,9 @@ router.put("/:editId", auth, async (req, res) => {
         req.body
       );
       res.json(data);
-    } else if (req.tokenData.role === "admin") {
-      const data = await ToyModel.updateOne({ _id: id }, req.body);
-      res.json(data);
+    // } else if (req.tokenData.role === "admin") {
+    //   const data = await ToyModel.updateOne({ _id: id }, req.body);
+    //   res.json(data);
     }
   } catch (err) {
     console.log(err);
@@ -92,8 +91,8 @@ router.delete("/:delId", auth, async (req, res) => {
         user_id: req.tokenData._id,
       });
       res.json(data);
-    } else if ((req.tokenData, role === "admin")) {
-      const data = await ToyModel.deleteOne({ _id: id }, req.body);
+    // } else if ((req.tokenData, role === "admin")) {
+    //   const data = await ToyModel.deleteOne({ _id: id }, req.body);
     }
   } catch (err) {
     console.log(err);
@@ -109,30 +108,34 @@ router.get("/prices", async (req, res) => {
     const maxPrice = parseInt(req.query.max);
 
     if (!minPrice || !maxPrice) {
-      return res
-        .status(400)
-        .json({ error: "Both 'min' and 'max' price parameters are required." });
+      return res.status(400).json({ error: "Both 'min' and 'max' price parameters are required." });
     }
 
     const searchText = req.query.searchText || "";
     const searchExp = new RegExp(searchText, "i");
+
     const filterFind = {
       $or: [{ title: searchExp }, { info: searchExp }],
       price: { $gte: minPrice, $lte: maxPrice },
     };
 
+    const count = await ToyModel.countDocuments(filterFind); // Count the total matching documents
+
     const toysInCategory = await ToyModel.find(filterFind)
-      .find(filter)
       .collation({ locale: "en", strength: 1 })
       .skip((page - 1) * limit)
-      .limit(perPage);
+      .limit(limit)
+      .sort({ price: 1 }); // Sort by price in ascending order
 
-    res.json(toysInCategory);
+    res.json({
+      data: toysInCategory,
+      count,
+      page,
+      totalPages: Math.ceil(count / limit),
+    });
   } catch (err) {
     console.error(err);
-    res
-      .status(500)
-      .json({ error: "An error occurred while processing your request." });
+    res.status(500).json({ error: "An error occurred while processing your request." });
   }
 });
 //Route H - domain/toys/single/:id

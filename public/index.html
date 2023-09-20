@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Documentation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f7f7f7;
+      }
+      h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .route {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+      .route h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+        background-color: #f3f3f3;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #555;
+      }
+      ul {
+        list-style-type: disc;
+        margin-left: 20px;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+      code {
+        background-color: #f1f1f1;
+        padding: 5px;
+        border-radius: 4px;
+        font-family: Consolas, monospace;
+      }
+      .inner-code {
+        display: flex;
+        flex-direction: column;
+      }
+      pre {
+        white-space: pre-wrap;
+        font-family: Consolas, monospace;
+      }
+      .query-parameters {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+      .table-container {
+        overflow-x: auto;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background-color: #f3f3f3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>API Documentation</h1>
+
+    <!-- Route A -->
+    <div class="route">
+      <h2>Routes A-C combined</h2>
+      <p><strong>GET</strong> /toys</p>
+      <p>Get a list of toys.</p>
+      <div class="code">
+    
+          <a href="https://osherstoyshop.cyclic.cloud/toys" target="_blank">https://osherstoyshop.cyclic.cloud/toys</a>
+      </div>
+      <p><strong>Query Parameters:</strong></p>
+      <ul>
+  
+        <li>
+          <code>page</code> (optional): Specifies the page number to retrieve
+          (default: 1).
+          <a href="https://osherstoyshop.cyclic.cloud/toys?page=1" target="_blank">https://osherstoyshop.cyclic.cloud/toys?page=1</a>
+        </li>
+      
+        <li>
+          <code>sort</code> (optional): Sorts the results by a specified field
+          (default: "_id").
+          <a href="https://osherstoyshop.cyclic.cloud/toys?page=1&sort=price" target="_blank">https://osherstoyshop.cyclic.cloud/toys?page=1&sort=price</a>
+        </li>
+        </li>
+        <li>
+          <code>reverse</code> (optional): Reverses the sorting order if set to
+          "yes".
+          <a href="https://osherstoyshop.cyclic.cloud/toys?sort=price&reverse=yes" target="_blank">https://osherstoyshop.cyclic.cloud/toys?sort=price&reverse=yes</a>
+        </li>
+        </li>
+        <li><code>s</code> (optional): Searches for toys by name or info.
+          <a
+          href="https://osherstoyshop.cyclic.cloud/toys/?page=1&s=scooter"
+          target="_blank"
+          >https://osherstoyshop.cyclic.cloud/toys/?page=1&s=scooter</a>
+
+        </li>
+        <li><code>category</code> (optional): Filters toys by category.
+          <a
+          href=" https://osherstoyshop.cyclic.cloud/toys/?category=food"
+          target="_blank"
+        >
+          https://osherstoyshop.cyclic.cloud/toys/?category=food</a
+        ></li>
+      </ul>
+    
+     
+      </div>
+    </div>
+
+    <!-- Route D -->
+    <div class="route">
+      <h2>Route D</h2>
+      <p><strong>POST</strong> /toys</p>
+      <p>Add a new toy (authentication required).</p>
+      <p><strong>Authentication:</strong> User must be logged in.</p>
+      <p><strong>Request Body:</strong> Should contain toy data.</p>
+      <div class="code">
+        <div class="inner-code">
+          <code> POST https://osherstoyshop.cyclic.cloud/toys </code>
+          <code> Headers: Authorization: X-api-key [YourAccessToken] </code>
+          <code>
+            <p>Body:</p>
+            <p>{"name": "New Toy Name",</p> 
+            <p>"info": "Toy description",</p>
+            <p>"img_url": "Optional image URL", </p>
+            <p>"price": Toy price, </p>
+            <p>"category":"Toy category" }</p>
+             
+             
+          </code>
+        </div>
+      </div>
+    </div>
+
+    <!-- Route E -->
+    <div class="route">
+      <h2>Route E</h2>
+      <p><strong>PUT</strong> /toys/:editId</p>
+      <p>Update a toy (authentication required).</p>
+      <p><strong>Authentication:</strong> User must be logged in.</p>
+      <p><strong>Request Body:</strong> Should contain updated toy data.</p>
+      <div class="code">
+        <div class="inner-code">
+          <code> POST https://osherstoyshop.cyclic.cloud/toys </code>
+          <code> Headers: Authorization: X-api-key [YourAccessToken] </code>
+          <code>
+            <p>Body:</p>
+            <p>{"name":" Updated New Toy Name",</p> 
+            <p>"info": "Updated Toy description",</p>
+            <p>"img_url":"Updated Optional image URL", </p>
+            <p>"price":Updated Toy price, </p>
+            <p>"category":"Updated Toy category" }</p>
+          </code>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+
+    <!-- Route F -->
+    <div class="route">
+      <h2>Route F</h2>
+      <p><strong>DELETE</strong> /toys/:delId</p>
+      <p>Delete a toy (authentication required).</p>
+      <p><strong>Authentication:</strong> User must be logged in.</p>
+      <code>
+      <code>DELETE https://osherstoyshop.cyclic.cloud/toys/yourToyId</code>
+       <p>Headers:</p> 
+        Authorization: X-api-key [YourAccessToken]
+        <p>Body:Empty</p>
+      </code>
+    </div>
+
+    <!-- Route G -->
+    <div class="route">
+      <h2>Route G</h2>
+      <p><strong>GET</strong> /toys/prices</p>
+      <p>Get toys within a price range.</p>
+      <div class="query-parameters">
+        <p><strong>Query Parameters:</strong></p>
+        <ul>
+          <li>
+            <code>limit</code> (optional): Limits the number of results per page
+            (default: 4).
+          </li>
+          <li>
+            <code>page</code> (optional): Specifies the page number to retrieve
+            (default: 1).
+          </li>
+          <li><code>min</code> (required): Minimum price.</li>
+          <li><code>max</code> (required): Maximum price.</li>
+          <li>
+            <code>searchText</code> (optional): Search text for filtering.
+          </li>
+        </ul>
+      </div>
+      <code>
+        <a href="https://osherstoyshop.cyclic.cloud/toys/prices?min=10&max=50&page=1" target="_blank">
+          https://osherstoyshop.cyclic.cloud/toys/prices?min=10&max=50&page=1</a>
+       
+      </code>
+    </div>
+
+    <!-- Route H -->
+    <div class="route">
+      <h2>Route H</h2>
+      <p><strong>GET</strong> /toys/single/:id</p>
+      <p>Get a single toy by ID.</p>
+      <div class="query-parameters">
+        <p><strong>Query Parameters:</strong></p>
+        <ul>
+          <li><code>id</code> (required): The ID of the toy to retrieve.</li>
+        </ul>
+      </div>
+      <code>   <a href="https://osherstoyshop.cyclic.cloud/toys/single/65085e769877a81df1c5b33e" target="_blank">https://osherstoyshop.cyclic.cloud/toys/single/65085e769877a81df1c5b33e</a> </code>
+    </div>
+
+    <!-- Route I -->
+    <div class="route">
+      <h2>Route I</h2>
+      <p><strong>GET</strong> /toys/count</p>
+      <p>Get the total count of toys.</p>
+      <div class="query-parameters">
+        <p><strong>Query Parameters:</strong></p>
+        <ul>
+          <li>
+            <code>limit</code> (optional): Limits the number of results per page
+            (default: 5).
+          </li>
+        </ul>
+      </div>
+      <code>  <a href="https://osherstoyshop.cyclic.cloud/toys/count?limit=10" target="_blank">https://osherstoyshop.cyclic.cloud/toys/count?limit=10</a></code>
+    </div>
+
+    <!-- USER API -->
+    <div class="route">
+      <h2>Users API</h2>
+      <p>This is the documentation for the Users API.</p>
+
+      <h3>Endpoints</h3>
+      <div class="table-container">
+        <table>
+          <tr>
+            <th>HTTP Method</th>
+            <th>Route</th>
+            <th>Description</th>
+            <th>Request Body</th>
+          </tr>
+          <tr>
+            <td>GET</td>
+            <td>/users/myInfo</td>
+            <td>Get user's information (requires authentication)</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>POST</td>
+            <td>/users</td>
+            <td>Create a new user</td>
+            <td>{ name: String, email: String,(role:user in default), password: String }</td>
+          </tr>
+          <tr>
+            <td>GET</td>
+            <td>/users/list</td>
+            <td>Get a list of users (requires admin authentication)</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>POST</td>
+            <td>/users/login</td>
+            <td>Authenticate a user and receive a JWT token in response</td>
+            <td>{ email: String, password: String }</td>
+          </tr>
+          <tr>
+            <td>PATCH</td>
+            <td>/users/:id/:role</td>
+            <td>Update user's role (requires admin authentication)</td>
+            <td>{ role: String }</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
